@@ -58,6 +58,8 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <!-- 源码含中文（日志/配置汉化）：源字符集与执行字符集均按 UTF-8 -->
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <!-- SEH (__try/__except) guards every read/call into game memory -->
       <ExceptionHandling>Async</ExceptionHandling>
       <AdditionalIncludeDirectories>third_party\detours;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -77,6 +79,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <ExceptionHandling>Async</ExceptionHandling>
       <AdditionalIncludeDirectories>third_party\detours;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
